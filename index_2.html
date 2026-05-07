@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vansh Garg — Digital Marketing Consultant</title>
+<meta name="description" content="IIM Calcutta MBA. I help small businesses get regular customers through content, paid ads, SEO, and email marketing. Rs. 30L+ ad spend managed.">
+<meta property="og:title" content="Vansh Garg — Digital Marketing Consultant">
+<meta property="og:description" content="Helping small businesses get regular customers through digital marketing. Rs. 30L+ ad spend managed, 5M+ views generated.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #0a0a0a;
+    --white: #fafaf8;
+    --ink: #1a1a1a;
+    --muted: #6b6b6b;
+    --faint: #e8e6e1;
+    --accent: #c8f04d;
+    --accent-dark: #a8d030;
+    --surface: #f2f0eb;
+    --border: #dedad4;
+    --card-bg: #ffffff;
+    --font-display: 'Syne', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-body);
+    background: var(--white);
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 0 48px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(250,250,248,0.88);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-logo {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--ink);
+    text-decoration: none;
+    letter-spacing: -0.02em;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 36px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--muted);
+    text-decoration: none;
+    letter-spacing: 0.01em;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--ink); }
+
+  .nav-cta {
+    background: var(--ink) !important;
+    color: var(--accent) !important;
+    padding: 8px 20px;
+    border-radius: 40px;
+    font-weight: 500 !important;
+    font-size: 13px !important;
+    transition: background 0.2s !important;
+  }
+
+  .nav-cta:hover { background: #333 !important; color: var(--accent) !important; }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 4px;
+  }
+  .hamburger span {
+    display: block; width: 22px; height: 2px;
+    background: var(--ink); border-radius: 2px;
+    transition: all 0.3s;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 160px 48px 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 32px;
+    padding: 6px 14px;
+    border: 1px solid var(--border);
+    border-radius: 40px;
+  }
+
+  .hero-eyebrow::before {
+    content: '';
+    width: 6px; height: 6px;
+    background: var(--accent);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .hero-headline {
+    font-family: var(--font-display);
+    font-size: clamp(44px, 7vw, 84px);
+    font-weight: 800;
+    line-height: 1.0;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+    max-width: 900px;
+    margin-bottom: 28px;
+  }
+
+  .hero-headline .highlight {
+    position: relative;
+    display: inline-block;
+    color: var(--ink);
+  }
+
+  .hero-headline .highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 4px; left: 0;
+    width: 100%; height: 10px;
+    background: var(--accent);
+    z-index: -1;
+    border-radius: 2px;
+  }
+
+  .hero-sub {
+    font-size: 17px;
+    font-weight: 300;
+    color: var(--muted);
+    max-width: 560px;
+    line-height: 1.7;
+    margin-bottom: 44px;
+  }
+
+  .hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    background: var(--ink);
+    color: var(--accent);
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 14px 32px;
+    border-radius: 40px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: 0.01em;
+  }
+
+  .btn-primary:hover {
+    background: #333;
+    transform: translateY(-1px);
+  }
+
+  .btn-secondary {
+    font-size: 14px;
+    color: var(--muted);
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .btn-secondary:hover { color: var(--ink); }
+
+  .hero-stats {
+    display: flex;
+    gap: 0;
+    margin-top: 72px;
+    border-top: 1px solid var(--border);
+    padding-top: 40px;
+  }
+
+  .stat {
+    flex: 1;
+    padding-right: 40px;
+    border-right: 1px solid var(--border);
+    margin-right: 40px;
+  }
+
+  .stat:last-child { border-right: none; margin-right: 0; padding-right: 0; }
+
+  .stat-num {
+    font-family: var(--font-display);
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .stat-label {
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 300;
+    letter-spacing: 0.01em;
+  }
+
+  /* SECTION COMMON */
+  section { padding: 100px 48px; }
+
+  .section-inner { max-width: 1200px; margin: 0 auto; }
+
+  .section-tag {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section-tag::before {
+    content: '';
+    width: 24px; height: 1px;
+    background: var(--muted);
+  }
+
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: var(--ink);
+    line-height: 1.1;
+    max-width: 600px;
+    margin-bottom: 56px;
+  }
+
+  /* SERVICES */
+  .services-bg { background: var(--surface); }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+  }
+
+  .service-card {
+    background: var(--card-bg);
+    padding: 40px 36px;
+    border: 1px solid var(--border);
+    transition: all 0.25s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .service-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%; height: 3px;
+    background: var(--accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+  }
+
+  .service-card:hover { background: var(--white); transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,0,0,0.07); }
+  .service-card:hover::before { transform: scaleX(1); }
+
+  .service-icon {
+    width: 40px; height: 40px;
+    background: var(--faint);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    font-size: 18px;
+  }
+
+  .service-name {
+    font-family: var(--font-display);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: -0.02em;
+    margin-bottom: 12px;
+  }
+
+  .service-desc {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  /* TRACK RECORD */
+  .cases-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .case-card {
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 40px;
+    background: var(--card-bg);
+    transition: all 0.25s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .case-card:hover { transform: translateY(-4px); box-shadow: 0 20px 60px rgba(0,0,0,0.08); }
+
+  .case-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink);
+    background: var(--accent);
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+
+  .case-client {
+    font-family: var(--font-display);
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+
+  .case-role {
+    font-size: 13px;
+    color: var(--muted);
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+
+  .case-desc {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.75;
+    font-weight: 300;
+  }
+
+  .case-metric {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid var(--faint);
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .metric-item { }
+
+  .metric-val {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--ink);
+    letter-spacing: -0.02em;
+  }
+
+  .metric-lbl {
+    font-size: 11px;
+    color: var(--muted);
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    margin-top: 2px;
+  }
+
+  /* TESTIMONIALS */
+  .testimonials-bg { background: var(--ink); }
+
+  .testimonials-bg .section-tag { color: #666; }
+  .testimonials-bg .section-tag::before { background: #666; }
+  .testimonials-bg .section-title { color: var(--white); }
+
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .testimonial-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    padding: 36px 32px;
+    transition: all 0.25s;
+  }
+
+  .testimonial-card:hover {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(200,240,77,0.3);
+  }
+
+  .testimonial-quote {
+    font-size: 32px;
+    line-height: 1;
+    color: var(--accent);
+    font-family: var(--font-display);
+    margin-bottom: 16px;
+  }
+
+  .testimonial-text {
+    font-size: 14px;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.8;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 28px;
+  }
+
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .author-avatar {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: rgba(200,240,77,0.15);
+    border: 1px solid rgba(200,240,77,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--accent);
+  }
+
+  .author-name {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--white);
+  }
+
+  .author-title {
+    font-size: 12px;
+    color: #666;
+    margin-top: 2px;
+  }
+
+  .testimonial-placeholder {
+    font-size: 13px;
+    color: #555;
+    font-style: italic;
+    text-align: center;
+    padding: 40px 20px;
+    border: 1px dashed #333;
+    border-radius: 12px;
+    margin-top: 20px;
+  }
+
+  /* LEAD FORM */
+  .form-section-bg { background: var(--white); }
+
+  .form-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+  }
+
+  .form-left .section-title { margin-bottom: 20px; }
+
+  .form-subtext {
+    font-size: 15px;
+    color: var(--muted);
+    font-weight: 300;
+    line-height: 1.7;
+    margin-bottom: 36px;
+  }
+
+  .creds {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .cred-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--ink);
+  }
+
+  .cred-dot {
+    width: 8px; height: 8px;
+    background: var(--accent);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .contact-form {
+    background: var(--surface);
+    border-radius: 20px;
+    padding: 48px 44px;
+    border: 1px solid var(--border);
+  }
+
+  .form-group { margin-bottom: 20px; }
+
+  .form-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+
+  .form-input, .form-textarea, .form-select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--white);
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--ink);
+    font-weight: 300;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+    -webkit-appearance: none;
+  }
+
+  .form-input:focus, .form-textarea:focus, .form-select:focus {
+    border-color: var(--ink);
+    box-shadow: 0 0 0 3px rgba(10,10,10,0.06);
+  }
+
+  .form-textarea {
+    resize: vertical;
+    min-height: 120px;
+    line-height: 1.6;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .form-submit {
+    width: 100%;
+    background: var(--ink);
+    color: var(--accent);
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 16px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 8px;
+    letter-spacing: 0.01em;
+  }
+
+  .form-submit:hover { background: #333; transform: translateY(-1px); }
+
+  .form-note {
+    text-align: center;
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 14px;
+    font-weight: 300;
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--black);
+    color: rgba(255,255,255,0.5);
+    padding: 56px 48px;
+  }
+
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .footer-logo {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: -0.02em;
+  }
+
+  .footer-tagline {
+    font-size: 13px;
+    color: #555;
+    margin-top: 4px;
+    font-weight: 300;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: right;
+  }
+
+  .footer-links a {
+    font-size: 14px;
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    font-weight: 300;
+    transition: color 0.2s;
+  }
+
+  .footer-links a:hover { color: var(--accent); }
+
+  .footer-bottom {
+    max-width: 1200px;
+    margin: 32px auto 0;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.07);
+    text-align: center;
+    font-size: 12px;
+    color: #444;
+  }
+
+  /* MOBILE NAV */
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 64px; left: 0; right: 0;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    padding: 24px 48px;
+    z-index: 99;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a {
+    font-size: 15px;
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: 400;
+  }
+
+  /* ANIMATIONS */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+  /* SUCCESS STATE */
+  .form-success {
+    display: none;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .form-success.show { display: block; }
+  .form-success-icon { font-size: 40px; margin-bottom: 16px; }
+  .form-success h3 {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+  .form-success p { font-size: 14px; color: var(--muted); font-weight: 300; }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    nav { padding: 0 24px; }
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+
+    .hero { padding: 120px 24px 80px; }
+    .hero-stats { flex-wrap: wrap; gap: 32px; }
+    .stat { border-right: none; margin-right: 0; padding-right: 0; flex: 0 0 45%; }
+
+    section { padding: 72px 24px; }
+
+    .services-grid { grid-template-columns: 1fr; gap: 1px; }
+    .cases-grid { grid-template-columns: 1fr; }
+    .testimonials-grid { grid-template-columns: 1fr; }
+    .form-layout { grid-template-columns: 1fr; gap: 48px; }
+    .form-row { grid-template-columns: 1fr; }
+    .contact-form { padding: 32px 24px; }
+
+    .footer-inner { flex-direction: column; align-items: flex-start; }
+    .footer-links { text-align: left; }
+    .mobile-menu { padding: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Vansh Garg</a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services" onclick="toggleMenu()">Services</a>
+  <a href="#work" onclick="toggleMenu()">Work</a>
+  <a href="#testimonials" onclick="toggleMenu()">Testimonials</a>
+  <a href="#contact" onclick="toggleMenu()">Let's Talk →</a>
+</div>
+
+<!-- HERO -->
+<section style="padding-top: 0; padding-bottom: 0;">
+  <div class="hero">
+    <div class="hero-eyebrow fade-up">IIM Calcutta MBA · Incoming Consultant at Accenture</div>
+    <h1 class="hero-headline fade-up">
+      I Help Small Businesses Get <span class="highlight">Regular Customers</span> Through Digital Marketing
+    </h1>
+    <p class="hero-sub fade-up">
+      4+ years running ads, content, and SEO for 7+ brands. Rs. 30L+ in ad spend managed. 5M+ views generated. Results you can actually measure.
+    </p>
+    <div class="hero-actions fade-up">
+      <a href="#contact" class="btn-primary">Let's Talk About Your Business →</a>
+      <a href="#work" class="btn-secondary">See my work ↓</a>
+    </div>
+
+    <div class="hero-stats fade-up">
+      <div class="stat">
+        <div class="stat-num">₹30L+</div>
+        <div class="stat-label">Ad spend managed</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">5M+</div>
+        <div class="stat-label">Views generated</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">7+</div>
+        <div class="stat-label">Brands served</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">30</div>
+        <div class="stat-label">Interns trained</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services-bg">
+  <div class="section-inner">
+    <div class="section-tag fade-up">What I offer</div>
+    <h2 class="section-title fade-up">Everything your business needs to grow online</h2>
+    <div class="services-grid">
+
+      <div class="service-card fade-up">
+        <div class="service-icon">📐</div>
+        <div class="service-name">Content Strategy</div>
+        <p class="service-desc">Stop posting and hoping. I build a content system that consistently attracts your ideal customers — the kind that come back, refer friends, and actually pay.</p>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon">⚡</div>
+        <div class="service-name">AI-Powered Content Creation</div>
+        <p class="service-desc">High-quality blogs, captions, scripts, and ad copy — produced faster and cheaper using cutting-edge AI tools, without losing the human touch.</p>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon">🎯</div>
+        <div class="service-name">Paid Ads (Meta & Google)</div>
+        <p class="service-desc">Every rupee should bring back more. I design and run campaigns built to turn strangers into paying customers — not just likes and impressions.</p>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon">📱</div>
+        <div class="service-name">Social Media Marketing</div>
+        <p class="service-desc">Your social pages should work like a 24/7 salesperson. I grow your audience and keep them engaged so your brand stays top of mind.</p>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon">📧</div>
+        <div class="service-name">Email Marketing</div>
+        <p class="service-desc">Your existing audience is your most underused asset. I set up automated email sequences that nurture leads and bring customers back — on autopilot.</p>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon">🔍</div>
+        <div class="service-name">SEO</div>
+        <p class="service-desc">Get found by people actively searching for what you sell. On-page and off-page SEO that builds long-term, compounding traffic you don't have to pay for.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TRACK RECORD -->
+<section id="work">
+  <div class="section-inner">
+    <div class="section-tag fade-up">Track record</div>
+    <h2 class="section-title fade-up">Where I've done it</h2>
+    <div class="cases-grid">
+
+      <div class="case-card fade-up">
+        <div class="case-tag">Personal Brand & Paid Ads</div>
+        <div class="case-client">Nirbhik Datta</div>
+        <div class="case-role">Meta Ads Strategist — Corporate Gig Acquisition</div>
+        <p class="case-desc">Designed 10+ Meta campaigns to position Nirbhik as a sought-after corporate speaker. Built funnels targeting HR heads and L&D managers — delivering a consistent pipeline of inbound corporate gig bookings through paid social alone.</p>
+        <div class="case-metric">
+          <div class="metric-item">
+            <div class="metric-val">10+</div>
+            <div class="metric-lbl">Campaigns launched</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-val">Consistent</div>
+            <div class="metric-lbl">Inbound pipeline</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-card fade-up">
+        <div class="case-tag">Growth & Ads</div>
+        <div class="case-client">Prachaar</div>
+        <div class="case-role">Social Media Growth & Paid Ads Lead</div>
+        <p class="case-desc">Built brand presence from zero — 70+ social pages across 7 platforms. Generated 5M+ views through organic and paid strategy. Managed Rs. 30L+ in Meta & Google ad spend with full ROAS accountability.</p>
+        <div class="case-metric">
+          <div class="metric-item">
+            <div class="metric-val">₹30L+</div>
+            <div class="metric-lbl">Ad spend managed</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-val">5M+</div>
+            <div class="metric-lbl">Views generated</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-val">70+</div>
+            <div class="metric-lbl">Pages built</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-card fade-up">
+        <div class="case-tag">SEO & Content</div>
+        <div class="case-client">MapMyStudy</div>
+        <div class="case-role">Digital Marketing Executive</div>
+        <p class="case-desc">Daily website audits, on-page SEO updates, off-page backlink generation, and email drip campaigns to build compounding organic traffic and a steady lead flow from search.</p>
+        <div class="case-metric">
+          <div class="metric-item">
+            <div class="metric-val">Daily</div>
+            <div class="metric-lbl">SEO audits & updates</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-val">Multi-channel</div>
+            <div class="metric-lbl">SEO + Email strategy</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-card fade-up">
+        <div class="case-tag">B2B Outreach</div>
+        <div class="case-client">Benchkart</div>
+        <div class="case-role">Email & LinkedIn Campaign Manager</div>
+        <p class="case-desc">End-to-end email and LinkedIn outreach campaigns to identify and convert prospective B2B clients. Full client relationship management with on-time delivery of all project deliverables.</p>
+        <div class="case-metric">
+          <div class="metric-item">
+            <div class="metric-val">B2B</div>
+            <div class="metric-lbl">Lead generation</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-val">Email + LinkedIn</div>
+            <div class="metric-lbl">Dual-channel outreach</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="testimonials-bg">
+  <div class="section-inner">
+    <div class="section-tag fade-up">Social proof</div>
+    <h2 class="section-title fade-up">What clients say</h2>
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-quote">"</div>
+        <p class="testimonial-text">Add a testimonial from one of your past clients here. Reach out to Nirbhik or someone from Prachaar for a 2-line quote — this section will convert visitors into leads.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">?</div>
+          <div>
+            <div class="author-name">Client Name</div>
+            <div class="author-title">Role, Company</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-quote">"</div>
+        <p class="testimonial-text">A second testimonial from a different client goes here. Even a short 1–2 sentence quote adds enormous credibility to your pitch. Ask for it over WhatsApp — most people say yes.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">?</div>
+          <div>
+            <div class="author-name">Client Name</div>
+            <div class="author-title">Role, Company</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-quote">"</div>
+        <p class="testimonial-text">A third testimonial from a client or colleague. Once you have real quotes, replace these placeholders — the design is already in place and will look great with real words.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">?</div>
+          <div>
+            <div class="author-name">Client Name</div>
+            <div class="author-title">Role, Company</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / LEAD FORM -->
+<section id="contact" class="form-section-bg">
+  <div class="section-inner">
+    <div class="form-layout">
+      <div class="form-left">
+        <div class="section-tag fade-up">Get in touch</div>
+        <h2 class="section-title fade-up">Ready to get regular customers?</h2>
+        <p class="form-subtext fade-up">Most small businesses post, boost, and hope. Let's build you a system instead — one that brings customers consistently, through the right content, ads, and strategy.</p>
+        <div class="creds fade-up">
+          <div class="cred-item"><div class="cred-dot"></div> IIM Calcutta MBA</div>
+          <div class="cred-item"><div class="cred-dot"></div> Incoming Consultant at Accenture</div>
+          <div class="cred-item"><div class="cred-dot"></div> 4+ years hands-on digital marketing</div>
+          <div class="cred-item"><div class="cred-dot"></div> Rs. 30L+ ad spend managed</div>
+          <div class="cred-item"><div class="cred-dot"></div> 7+ brands served across industries</div>
+        </div>
+      </div>
+
+      <div class="contact-form fade-up">
+        <iframe data-tally-src="https://tally.so/embed/2E1Eye?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="300" frameborder="0" marginheight="0" marginwidth="0" title="Contact Vansh Garg"></iframe>
+        <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">Vansh Garg</div>
+      <div class="footer-tagline">Digital Marketing Consultant</div>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:gargvansh01@gmail.com">gargvansh01@gmail.com</a>
+      <a href="tel:+919650328685">+91 96503 28685</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2025 Vansh Garg. All rights reserved.</div>
+</footer>
+
+<script>
+  // Mobile menu
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+
+  // Fade-up on scroll
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 80);
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+
+
+</script>
+</body>
+</html>
